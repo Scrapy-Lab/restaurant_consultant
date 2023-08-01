@@ -8,7 +8,7 @@
     <!-- keywords -->
     <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, faq">
     <!-- Page Title -->
-    <title>Consulting | MegaOne HTML5 Template</title>    
+    <title>TRC | The Restaurant Consultants</title>    
     <!-- Favicon -->
     <link rel="icon" href="consulting/img/favicon.ico">
     <!-- Bundle -->
