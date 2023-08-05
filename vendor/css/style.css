@@ -1313,77 +1313,8 @@ header.header-appear .navbar-top-default .header-social a:hover {
 .banner-overlay::after {
     background: rgba(0,0,0,.39);
 }
-.awaza.tp-bullets {
-    z-index: 98;
-}
-.awaza.tp-bullets {
-    left: -25px !important;
-}
-.awaza .tp-bullet.selected, .awaza .tp-bullet:hover {
-    background:transparent;
-}
-#banner-main .tp-bullet, .bullet-bar .tp-bullet {
-    border-radius: 36px;
-}
-#banner-main .tp-bullet:hover {
-    background: #ffffff;
-}
-/* Revolution Slider Numbers Bullets */
-.awaza .tp-bullet.selected .animated-wrap, .awaza .tp-bullet.selected .animated-element {
-    transform: none !important;
-}
-.awaza .animated-wrap {
-    width: 25px;
-}
-.awaza .tp-bullet {
-    width: unset;
-    height: 6px;
-    position: relative;
-    background:transparent;
-    cursor: pointer;
-    color: #1f1f1f;
-}
-.awaza .tp-bullet-number {
-    position: relative;
-    text-align: left;
-}
-.awaza .tp-bullet.selected:nth-child(4){
-    padding-bottom: 4px;
-    border-bottom: 2px solid;
-}
-.awaza, .tp-tabs, .tp-thumbs{
-    top: 43% !important;
-}
-.awaza .tp-bullet .tp-count {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    position: relative;
-}
-.awaza .tp-count:after {
-    content: '';
-    border-radius: 36px;
-    height: 5px;
-    width: 27px;
-    display: block;
-    position: absolute;
-    background: #ffffff;
-    top: 100%;
-    visibility: visible;
-    opacity: 1;
-}
-.awaza .tp-count:before {
-    content: '';
-    border-radius: 50%;
-    height: 5px;
-    width: 5px;
-    display: block;
-    position: absolute;
-    background: #ffffff;
-    transform: translateX(-250%);
-}
-.awaza .tp-bullet.selected .tp-count:before, .awaza .tp-bullet.selected .tp-count:after {
-    background: #28a745;
-}
+
+
 
 .slide-action {
     font-size: 14px;
