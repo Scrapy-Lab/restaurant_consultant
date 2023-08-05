@@ -418,7 +418,7 @@ jQuery(function ($) {
                 h_offset: 50,
                 v_offset: 0,
                 space: 5,
-                tmp: '<div class="tp-bullet-number"><span class="tp-count">{{param1}}</span><span class="tp-bullet-line"></span></div>'
+                // tmp: '<div class="tp-bullet-number"><span class="tp-count">{{param1}}</span><span class="tp-bullet-line"></span></div>'
             }
         },
         viewPort: {
