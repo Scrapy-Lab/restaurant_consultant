@@ -429,7 +429,7 @@ a.image{
     background-color: #ffffff;
 }
 .transparent-bg {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .bg-dark {
     background-color: #1d1d21 !important;

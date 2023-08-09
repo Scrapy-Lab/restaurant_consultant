@@ -4,17 +4,17 @@
         <div class="container">
             <a class="logo" href="javascript:void(0)">
 
-                <h2>TRC</h2>
-                <!-- <img src="consulting/img/logo.png" alt="logo" title="Logo" class="logo-default">
-            <img src="consulting/img/logo2.png" alt="logo" title="Logo" class="logo-scrolled"> -->
+                {{-- <h2>TRC</h2> --}}
+                <img src="consulting/img/logo.png" alt="logo" title="Logo" class="logo-default">
+            {{-- <img src="consulting/img/logo2.png" alt="logo" title="Logo" class="logo-scrolled">  --}}
             </a>
             <div class="collapse navbar-collapse d-none d-lg-block">
                 <ul class="nav navbar-nav ml-auto mr-4">
                     <li class="nav-item"> <a href="#home" class="scroll textColor-white nav-link">home</a></li>
                     <li class="nav-item"> <a href="#aboutus" class="scroll textColor-white nav-link">about us</a>
                     </li>
-                    <li class="nav-item"> <a href="#cases" class="scroll textColor-white nav-link">cases</a></li>
-                    <li class="nav-item"> <a href="#prices" class="scroll textColor-white nav-link">prices</a></li>
+                    <li class="nav-item"> <a href="#services" class="scroll textColor-white nav-link">services</a></li>
+                    <li class="nav-item"> <a href="#sectors" class="scroll textColor-white nav-link">Sectors</a></li>
                     <li class="nav-item"> <a href="#blog" class="scroll textColor-white nav-link">blog</a></li>
                     <li class="nav-item"> <a href="#contact" class="scroll textColor-white nav-link">contact</a>
                     </li>
@@ -41,8 +41,8 @@
                 <div class="navbar-nav">
                     <a href="#home" class="scroll nav-link">home</a>
                     <a href="#aboutus" class="scroll nav-link">about us</a>
-                    <a href="#cases" class="scroll nav-link">cases</a>
-                    <a href="#prices" class="scroll nav-link">prices</a>
+                    <a href="#services" class="scroll nav-link">Services</a>
+                    <a href="#sectors" class="scroll nav-link">Sectors</a>
                     <a href="#blog" class="scroll nav-link">blog</a>
                     <a href="#contact" class="scroll nav-link">contact</a>
                     <a class="menu-line"><i class="fa fa-angle-right font-14" aria-hidden="true"></i></a>

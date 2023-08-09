@@ -40,7 +40,7 @@
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
 
     <!-- Loader -->
-    <div class="loader" id="loader-fade">
+    {{-- <div class="loader" id="loader-fade">
         <div class="loader-container">
             <ul class="loader-box">
                 <li></li>
@@ -54,7 +54,7 @@
                 <li></li>
             </ul>
         </div>
-    </div>
+    </div> --}}
     <!-- Loader ends -->
 
 
@@ -82,7 +82,7 @@
     <script src="vendor/js/jquery.appear.js"></script>
     <script src="vendor/js/parallaxie.min.js"></script>
     <script src="vendor/js/wow.min.js"></script>
-    <script src="vendor/js/select2.min.js"></script>
+    {{-- <script src="vendor/js/select2.min.js"></script> --}}
     <!-- Slick JS File -->
     <script src="vendor/js/slick.min.js"></script>
 
