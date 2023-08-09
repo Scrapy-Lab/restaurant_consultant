@@ -13,7 +13,7 @@
                     <div class="col-md-12 col-sm-12">
                         <div class="request-form-textfield pb-4">
                             <select class="form-control" wire:model.lazy="service_id" title="service_id" name="service_id" id="service_ids" required>
-                                <option value="0">Select Service</option>
+                                <option selected value="0">Select Service</option>
                                 <option value="1">Service 1</option>
                                 <option value="2">Service 2</option>
                                 <option value="3">Service 3</option>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-md-12 col-sm-12">
                         <div class="request-form-textfield pb-4">
-                            <textarea placeholder="Enter your text here..." class="form-control mb-0" wire:model.lazy="msg" name="msg"></textarea>
+                            <textarea placeholder="Enter your query..." class="form-control mb-0" wire:model.lazy="msg" name="msg"></textarea>
                             @if ($errors->has('msg'))
                                 <span style="color: red">{{ $errors->first('msg') }}</span>
                             @endif

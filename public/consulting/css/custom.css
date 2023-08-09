@@ -41,7 +41,7 @@ img.sector_class {
     /* flex-direction: column; */
     align-items: center;
     border: 2px solid #000; /* Add the border */
-    padding: 20px; 
+    padding: 20px;
     color: #fff;
     font-size: 15px;
     position: relative;
@@ -55,7 +55,7 @@ img.sector_class {
 }
 
 .services-detail p.service-head {
-    color: #252323!important;
+    /* color: #252323!important; */
     font-weight: bold!important;
     text-transform: uppercase!important;
 }
@@ -66,6 +66,23 @@ img.sector_class {
     text-align: left;
     float: left;
     padding-left: 50px;
-    color: #2d2d2d!important;
+    /* color: #2d2d2d!important; */
     font-size: .85rem!important;
+}
+
+
+img.sector_class_cloud {
+    padding-left: 125px;
+}
+
+img.sector_class_fineDine {
+    padding-left: 72px;
+}
+
+img.sector_class_quick {
+    padding-left: 125px;
+}
+
+img.sector_class_clubs {
+    padding-left: 308px;
 }
