@@ -13,7 +13,7 @@
     <!-- Page Title -->
     <title>TRC | The Restaurant Consultants</title>
     <!-- Favicon -->
-    <link rel="icon" href="consulting/img/favicon.ico">
+    <link rel="icon" href="consulting/img/logo.png">
     <!-- Bundle -->
     <link rel="stylesheet" href="vendor/css/bundle.min.css">
     <!-- Plugin Css -->
