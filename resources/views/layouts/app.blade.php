@@ -40,9 +40,9 @@
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
 
     <!-- Loader -->
-    {{-- <div class="loader" id="loader-fade">
+    <div class="loader" id="loader-fade">
         <div class="loader-container">
-            <ul class="loader-box">
+            {{-- <ul class="loader-box">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -52,9 +52,10 @@
                 <li></li>
                 <li></li>
                 <li></li>
-            </ul>
+            </ul> --}}
+            <img src="consulting/img/logo_black.png" alt="logo" title="Logo" class="logo-default">
         </div>
-    </div> --}}
+    </div>
     <!-- Loader ends -->
 
 

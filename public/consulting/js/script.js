@@ -1,11 +1,11 @@
-// jQuery(window).on("load", function () {
-//     "use strict";
+jQuery(window).on("load", function () {
+    "use strict";
 
-//     /*  ===================================
-//      Loading Timeout
-//      ====================================== */
-//     $("#loader-fade").fadeOut(800);
-// });
+    /*  ===================================
+     Loading Timeout
+     ====================================== */
+    $("#loader-fade").fadeOut(800);
+});
 
 jQuery(function ($) {
     "use strict";
