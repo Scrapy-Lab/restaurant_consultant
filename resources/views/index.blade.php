@@ -12,9 +12,9 @@
                     <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"
                         data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="">
                         <!-- MAIN IMAGE -->
-                        <img src="consulting/video/thumb.jpg" alt="" data-bgposition="center center"
+                        {{-- <img src="consulting/video/thumb.jpg" alt="" data-bgposition="center center"
                             data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="7"
-                            data-no-retina>
+                            data-no-retina> --}}
                         <div class="bg-overlay bg-black opacity-7"></div>
                         <img alt="stats" src="consulting/img/banner.jpg" class="about-img">
 
