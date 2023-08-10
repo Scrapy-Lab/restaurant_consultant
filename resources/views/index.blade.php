@@ -10,7 +10,7 @@
 
                     <!-- SLIDE 2 -->
                     <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"
-                        data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="">
+                        data-easeout="Power3.easeInOut" data-masterspeed="200" data-fsmasterspeed="150" data-param1="">
                         <!-- MAIN IMAGE -->
                         {{-- <img src="consulting/video/thumb.jpg" alt="" data-bgposition="center center"
                             data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="7"
