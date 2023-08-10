@@ -4,7 +4,7 @@
     <section id="home" class="p-0 no-transition h-100vh">
         <h2 class="d-none">heading</h2>
         <!--Main Slider-->
-        {{-- <div id="revo_thumbs_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
+        <div id="revo_thumbs_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
             <div id="secondary-banner" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
                 <ul>
 
@@ -82,13 +82,13 @@
                             data-voffset="['160','160','140','140']" data-width="['160','160','160','160']"
                             data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['center','center','center','center']" style="z-index:5; max-width: 960px">
-
+                            {{-- <a href="javascript:void(0)" class="btn-setting btn-scale btn-blue text-white">learn more</a> --}}
                         </div>
 
                     </li>
                 </ul>
             </div>
-        </div> --}}
+        </div>
         <!--Main Slider ends -->
     </section>
     <!-- Main Section end -->
