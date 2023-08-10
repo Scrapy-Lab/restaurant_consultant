@@ -284,7 +284,7 @@ jQuery(function ($) {
     $(document).ready(function(){
 
         // Initialize select2
-        $("#services").select2();
+        // $("#services").select2();
 
     });
 
