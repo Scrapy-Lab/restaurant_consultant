@@ -91,7 +91,7 @@
     <script src="vendor/js/jquery.themepunch.tools.min.js"></script>
     <script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
     <!-- SLIDER REVOLUTION EXTENSIONS -->
-    <script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
+    {{-- <script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
     <script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
     <script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
     <script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
@@ -99,7 +99,7 @@
     <script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
     <script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.video.min.js"></script> --}}
 
     <!-- Google Map Api -->
     {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
