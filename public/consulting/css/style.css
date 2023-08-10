@@ -315,7 +315,7 @@ i::before, i::after {
     visibility: hidden !important;
 }
 .map {
-    background: url("../img/map.jpg");
+    /* background: url("../img/map.jpg"); */
 }
 
 .heading-para-setting {
