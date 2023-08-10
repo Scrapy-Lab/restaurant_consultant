@@ -15,25 +15,25 @@
     <!-- Favicon -->
     <link rel="icon" href="consulting/img/logo.png">
     <!-- Bundle -->
-    <link rel="stylesheet" href="vendor/css/bundle.min.css">
+    <link rel="stylesheet" href="{{asset('vendor/css/bundle.min.css')}}">
     <!-- Plugin Css -->
-    <link rel="stylesheet" href="vendor/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="{{asset('vendor/css/jquery.fancybox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/css/swiper.min.css')}}">
 
-    <link rel="stylesheet" href="vendor/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="{{asset('vendor/css/cubeportfolio.min.css')}}">
     <!-- Revolution Slider CSS Files -->
-    <link rel="stylesheet" href="consulting/css/navigation.css">
-    <link rel="stylesheet" href="consulting/css/settings.css">
+    <link rel="stylesheet" href="{{asset('consulting/css/navigation.css')}}">
+    <link rel="stylesheet" href="{{asset('consulting/css/settings.css')}}">
     <!-- Slick CSS Files -->
-    <link rel="stylesheet" href="vendor/css/slick.css">
-    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <link rel="stylesheet" href="{{asset('vendor/css/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/css/slick-theme.css')}}">
     <!-- Select -->
-    <link rel="stylesheet" href="vendor/css/select2.min.css">
+    <link rel="stylesheet" href="{{asset('vendor/css/select2.min.css')}}">
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="consulting/css/style.css">
+    <link rel="stylesheet" href="{{asset('consulting/css/style.css')}}">
     <!-- Custom Style CSS File -->
-    <link rel="stylesheet" href="consulting/css/custom.css">
+    <link rel="stylesheet" href="{{asset('consulting/css/custom.css')}}">
     @livewireStyles()
 </head>
 
@@ -53,7 +53,7 @@
                 <li></li>
                 <li></li>
             </ul> --}}
-            <img src="consulting/img/logo_black.png" alt="logo" title="Logo" class="logo-default">
+            <img src="{{asset('consulting/img/logo_black.png')}}" alt="logo" title="Logo" class="logo-default">
         </div>
     </div>
     <!-- Loader ends -->
@@ -73,23 +73,23 @@
 
 
     <!-- JavaScript -->
-    <script src="vendor/js/bundle.min.js"></script>
+    <script src="{{asset('vendor/js/bundle.min.js')}}"></script>
 
     <!-- Plugin Js -->
-    <script src="vendor/js/jquery.fancybox.min.js"></script>
-    <script src="vendor/js/owl.carousel.min.js"></script>
-    <script src="vendor/js/swiper.min.js"></script>
-    <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
-    <script src="vendor/js/jquery.appear.js"></script>
-    <script src="vendor/js/parallaxie.min.js"></script>
-    <script src="vendor/js/wow.min.js"></script>
+    <script src="{{asset('vendor/js/jquery.fancybox.min.js')}}"></script>
+    <script src="{{asset('vendor/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('vendor/js/swiper.min.js')}}"></script>
+    <script src="{{asset('vendor/js/jquery.cubeportfolio.min.js')}}"></script>
+    <script src="{{asset('vendor/js/jquery.appear.js')}}"></script>
+    <script src="{{asset('vendor/js/parallaxie.min.js')}}"></script>
+    <script src="{{asset('vendor/js/wow.min.js')}}"></script>
     {{-- <script src="vendor/js/select2.min.js"></script> --}}
     <!-- Slick JS File -->
-    <script src="vendor/js/slick.min.js"></script>
+    <script src="{{asset('vendor/js/slick.min.js')}}"></script>
 
     <!-- REVOLUTION JS FILES -->
-    <script src="vendor/js/jquery.themepunch.tools.min.js"></script>
-    <script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="{{asset('vendor/js/jquery.themepunch.tools.min.js')}}"></script>
+    <script src="{{asset('vendor/js/jquery.themepunch.revolution.min.js')}}"></script>
     <!-- SLIDER REVOLUTION EXTENSIONS -->
     {{-- <script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
     <script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
@@ -106,10 +106,10 @@
     <script src="consulting/js/maps.min.js"></script> --}}
 
     <!--contact form-->
-    <script src="vendor/js/contact_us.js"></script>
+    <script src="{{asset('vendor/js/contact_us.js')}}"></script>
 
     <!-- custom script -->
-    <script src="consulting/js/script.js"></script>
+    <script src="{{asset('consulting/js/script.js')}}"></script>
     @livewireScripts()
 </body>
 
