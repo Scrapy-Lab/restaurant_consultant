@@ -14,7 +14,7 @@
                         <!-- MAIN IMAGE -->
 
                         <div class="bg-overlay bg-black opacity-7"></div>
-                        <img alt="stats" src="consulting/img/banner.jpg" class="about-img">
+                        <img alt="stats" src="{{asset('consulting/img/banner.jpg')}}" class="about-img">
 
 
                         <!--If you need youtube video-->
@@ -247,7 +247,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team1.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team1.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -271,7 +271,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team2.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team2.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -296,7 +296,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team3.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team3.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -320,7 +320,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team1.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team1.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -345,7 +345,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team2.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team2.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -370,7 +370,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team3.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team3.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -394,7 +394,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team1.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team1.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -418,7 +418,7 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="consulting/img/team2.jpg" alt="team" class="img-responsive"
+                                    <img src="{{asset('consulting/img/team2.jpg')}}" alt="team" class="img-responsive"
                                         data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
@@ -471,7 +471,7 @@
 
                 <div class="col-lg-6 col-md-12 p-0">
                     <div class="hover-effect">
-                        <img alt="stats" src="consulting/img/split-service.jpg" class="about-img">
+                        <img alt="stats" src="{{asset('consulting/img/split-service.jpg')}}" class="about-img">
                     </div>
                 </div>
 
@@ -501,7 +501,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">CONCEPT CREATION</h6>
-                                    <img src="consulting/img/cases1.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project1" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -525,7 +525,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">ARCHITECTURAL</h6>
-                                    <img src="consulting/img/cases2.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project2" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -548,7 +548,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">Restaurant Design and Layou</h6>
-                                    <img src="consulting/img/cases3.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                 </div>
 
                                 <a href="#js-singlePage-container/project3" class="cbp-caption-activeWrap cbp-singlePage">
@@ -572,7 +572,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> CUISINE & FOOD IDENTITY</h6>
-                                    <img src="consulting/img/cases4.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                 </div>
 
                                 <a href="#js-singlePage-container/project4" class="cbp-caption-activeWrap cbp-singlePage">
@@ -596,7 +596,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> HIRING & TRAINING</h6>
-                                    <img src="consulting/img/cases5.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project5" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -619,7 +619,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">AUDITS & PROGRAMS</h6>
-                                    <img src="consulting/img/cases6.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project6" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -642,7 +642,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> MARKETING & STRATEGY</h6>
-                                    <img src="consulting/img/cases7.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project7" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -665,7 +665,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> OPERATIONS & MANAGEMENT</h6>
-                                    <img src="consulting/img/cases8.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -688,7 +688,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> ADVISORY & STRATEGY</h6>
-                                    <img src="consulting/img/cases8.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -711,7 +711,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> Franchise and Expansion Planning</h6>
-                                    <img src="consulting/img/cases8.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -734,7 +734,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> Financial Analysis and Budgeting</h6>
-                                    <img src="consulting/img/cases8.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -757,7 +757,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">Waste Management and Sustainability</h6>
-                                    <img src="consulting/img/cases8.jpg" alt="">
+                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -787,13 +787,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases1.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases2.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases3.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -828,21 +828,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project2"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases2.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Strategy Buildup</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project3"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases3.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Marketing Analysis</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project4"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases4.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Online Consultation</div>
                                             </a>
                                         </li>
@@ -861,13 +861,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases2.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases3.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases4.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -902,21 +902,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project3"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases3.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Marketing Analysis</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project4"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases4.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Online Consultation</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project5"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases5.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Social Media Marketing </div>
                                             </a>
                                         </li>
@@ -935,13 +935,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases3.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases4.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases5.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -976,21 +976,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project4"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases4.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Online Consultation</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project5"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases5.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Social Media Marketing</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project6"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases6.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Financial Consultations</div>
                                             </a>
                                         </li>
@@ -1010,13 +1010,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases4.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases5.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases6.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1051,21 +1051,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project5"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases5.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Social Media Marketing</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project6"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases6.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Financial Consultations</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project7"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases7.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Creative Idea Generator</div>
                                             </a>
                                         </li>
@@ -1085,13 +1085,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases5.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases6.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases7.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1126,21 +1126,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project6"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases6.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Financial Consultations</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project7"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases7.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Creative Idea Generator</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project8"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases8.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Build Up Career</div>
                                             </a>
                                         </li>
@@ -1160,13 +1160,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases6.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases7.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases8.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1201,21 +1201,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project7"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases7.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Creative Idea Generator</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project8"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases8.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Build Up Career</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project1"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases1.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Business Planning</div>
                                             </a>
                                         </li>
@@ -1235,13 +1235,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases7.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases8.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases1.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1276,21 +1276,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project8"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases8.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Build Up Career</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project1"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases1.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Business Planning</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project2"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases2.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Strategy Buildup</div>
                                             </a>
                                         </li>
@@ -1309,13 +1309,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases8.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases1.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="consulting/img/cases2.jpg" alt="">
+                                        <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1350,21 +1350,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project1"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases1.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Business Planning</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project2"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases2.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Strategy Buildup</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project3"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="consulting/img/cases3.jpg" alt="">
+                                                <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
                                                 <div class="cbp-l-project-related-title">Marketing Analysis</div>
                                             </a>
                                         </li>
@@ -1764,7 +1764,7 @@
                                 <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
                                     <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="consulting/img/testimonial1.jpg"
+                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial1.jpg')}}"
                                                 alt="image"></div>
 
                                         <div class="text-content text-center">
@@ -1787,7 +1787,7 @@
                                 <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
                                     <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="consulting/img/testimonial2.jpg"
+                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial2.jpg')}}"
                                                 alt="image"></div>
 
                                         <div class="text-content text-center">
@@ -1810,7 +1810,7 @@
                                 <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
                                     <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="consulting/img/testimonial3.jpg"
+                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial3.jpg')}}"
                                                 alt="image"></div>
 
                                         <div class="text-content text-center">
@@ -1830,7 +1830,7 @@
                                 <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
                                     <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="consulting/img/testimonial4.jpg"
+                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial4.jpg')}}"
                                                 alt="image"></div>
 
                                         <div class="text-content text-center">
@@ -1853,7 +1853,7 @@
                                 <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
                                     <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="consulting/img/testimonial5.jpg"
+                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial5.jpg')}}"
                                                 alt="image"></div>
 
                                         <div class="text-content text-center">
@@ -1886,17 +1886,17 @@
                         <div class="owl-carousel owl-theme owl-split">
                             <div class="item">
                                 <div class="image split-blog-scale">
-                                    <img alt="request" src="consulting/img/split-request.jpg" class="about-img">
+                                    <img alt="request" src="{{asset('consulting/img/split-request.jpg')}}" class="about-img">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="image split-blog-scale">
-                                    <img alt="request" src="consulting/img/split-request2.jpg" class="about-img">
+                                    <img alt="request" src="{{asset('consulting/img/split-request2.jpg')}}" class="about-img">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="image split-blog-scale">
-                                    <img alt="request" src="consulting/img/split-request3.jpg" class="about-img">
+                                    <img alt="request" src="{{asset('consulting/img/split-request3.jpg')}}" class="about-img">
                                 </div>
                             </div>
                         </div>
