@@ -102,8 +102,8 @@
     <script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
 
     <!-- Google Map Api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
-    <script src="consulting/js/maps.min.js"></script>
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
+    <script src="consulting/js/maps.min.js"></script> --}}
 
     <!--contact form-->
     <script src="vendor/js/contact_us.js"></script>
