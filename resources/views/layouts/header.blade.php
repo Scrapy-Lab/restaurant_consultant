@@ -1,6 +1,7 @@
   <!-- Header start -->
   <header>
-    <nav class="navbar bg-blackDark navbar-top-default navbar-expand-lg static-nav transparent-bg nav-bottom-line">
+    {{-- transparent-bg --}}
+    <nav class="navbar bg-blackDark navbar-top-default navbar-expand-lg static-nav  nav-bottom-line">
         <div class="container">
             <a class="logo" href="javascript:void(0)">
 
