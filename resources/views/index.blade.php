@@ -1,12 +1,61 @@
 @extends('layouts.app')
 @section('content')
     <!-- Main Section start -->
-    <section id="home" class="p-0 no-transition h-100vh">
+    <section id="home" class="p-0 no-transition h-100vh bg-blackDark">
         <h2 class="d-none">heading</h2>
         <!--Main Slider-->
-        <div id="revo_thumbs_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
+
+
+        <div id="carouselExampleDark" class="carousel  slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="{{ asset('consulting/img/banner1.jpg') }}" class="d-block w-100"
+                        alt="{{ asset('consulting/img/banner.jpg') }}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>We Provide Most Beneficial Services</h1>
+                        <p class="textColor-white">Get Business Solution with TRC.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{{ asset('consulting/img/banner2.jpg') }}" class="d-block w-100"
+                        alt="{{ asset('consulting/img/banner.jpg') }}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('consulting/img/banner3.jpg') }}" class="d-block w-100"
+                        alt="{{ asset('consulting/img/banner.jpg') }}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        {{--   <div id="revo_thumbs_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
             <div id="secondary-banner" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
-                <ul>
+
+
+
+               <ul>
 
                     <!-- SLIDE 2 -->
                     <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"
@@ -14,20 +63,7 @@
                         <!-- MAIN IMAGE -->
 
                         <div class="bg-overlay bg-black opacity-7"></div>
-                        <img alt="stats" src="{{asset('consulting/img/banner.jpg')}}" class="about-img">
-
-
-                        <!--If you need youtube video-->
-                        <!--<div class="rs-background-video-layer"
-                            data-ytid="hEkiWaEp03k"
-                            data-volume="mute"
-                            data-forcerewind="on"
-                            data-nextslideatend="true"
-                            data-autoplay="true"
-                            data-autoplayonlyfirsttime="true"
-                            data-videoloop="loopandnoslidestop"
-                            data-videoattributes="version=3&enablejsapi=1&html5=1&hd=1&autoplay=1&wmode=opaque&showinfo=0&rel=0&
-                origin=http://server.local"></div>-->
+                        <img alt="stats" src="{{ asset('consulting/img/banner.jpg') }}" class="about-img">
 
                         <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
@@ -82,13 +118,13 @@
                             data-voffset="['160','160','140','140']" data-width="['160','160','160','160']"
                             data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['center','center','center','center']" style="z-index:5; max-width: 960px">
-                            {{-- <a href="javascript:void(0)" class="btn-setting btn-scale btn-blue text-white">learn more</a> --}}
+
                         </div>
 
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
         <!--Main Slider ends -->
     </section>
     <!-- Main Section end -->
@@ -104,7 +140,55 @@
                             <h5 class="textColor-white"> About company </h5>
                             <h2 class="textColor-white"> Welcome to The Restaurant Consultant! </h2>
 
-                            <a href="javascript:void(0)" class="btn-setting btn-scale btn-blue text-white">learn more</a>
+                            {{-- <a href="javascript:void(0)" class=""></a> --}}
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn-setting btn-scale btn-blue text-white" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                learn more
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">About</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+
+                                            <p>At The Restaurant Consultant, we are passionate about the art and science of hospitality. Our mission is to partner with restaurants, cafes, bars, and culinary establishments to elevate their dining experiences, streamline operations, and maximize their potential for success.
+
+                                                With a deep-rooted love for the culinary world and a keen understanding of the industry's dynamics, we offer unparalleled expertise in restaurant consulting. Our team of seasoned professionals brings a wealth of knowledge encompassing every aspect of the dining business, from concept development and menu design to operational efficiency and customer service excellence.
+
+                                                What sets us apart is our commitment to a holistic approach. We recognize that every restaurant is unique, with its own personality, challenges, and goals. That's why we tailor our consulting services to suit the specific needs and aspirations of each client. Whether you're a start-up looking to make a memorable entrance or an established eatery seeking to rejuvenate your offerings, we're here to guide you every step of the way.
+
+                                                Our Approach:
+
+                                                Collaborative Partnership: We believe in working closely with our clients, fostering a collaborative environment where ideas flow freely and visions come to life.
+                                                Data-Driven Insights: Our strategies are rooted in thorough market research, industry trends, and customer preferences, ensuring that your restaurant stands out in a competitive landscape.
+                                                Operational Excellence: From optimizing workflows to enhancing staff training, we fine-tune the operational aspects that make your restaurant run like a well-oiled machine.
+                                                Uncompromising Quality: Just as you strive for excellence in your culinary creations, we uphold the highest standards in our consulting services, delivering results that exceed expectations.
+                                                Why Choose Us?
+
+                                                Proven Track Record: We have a track record of success stories, having helped numerous restaurants achieve their goals and witness substantial growth.
+                                                Passionate Team: Our consultants aren't just experts; they're passionate foodies and hospitality enthusiasts who genuinely care about your success.
+                                                Innovation and Creativity: We're not afraid to think outside the box, exploring innovative ideas that will set your restaurant apart and captivate your audience.
+                                                Long-Term Vision: Beyond immediate solutions, we help you lay the groundwork for long-term sustainability and continued growth.
+                                                Whether you're embarking on a culinary adventure or seeking to enhance your restaurant's performance, [Your Restaurant Consulting Firm's Name] is here to guide you towards excellence. Let's create a dining experience that leaves a lasting impression and keeps customers coming back for more.
+
+                                                Contact us today to start your journey towards culinary success.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="ml-md-4 pl-md-2">
                             <p class="mb-4 textColor-white">We are passionate about the art and science of hospitality. Our
@@ -247,8 +331,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team1.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team1.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -271,8 +355,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team2.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team2.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -296,8 +380,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team3.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team3.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -320,8 +404,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team1.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team1.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -345,8 +429,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team2.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team2.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -370,8 +454,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team3.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team3.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -394,8 +478,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team1.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team1.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -418,8 +502,8 @@
                         <div class="item">
                             <div class="team-data-img wow fadeIn" data-wow-delay="350ms">
                                 <div class="image">
-                                    <img src="{{asset('consulting/img/team2.jpg')}}" alt="team" class="img-responsive"
-                                        data-no-retina>
+                                    <img src="{{ asset('consulting/img/team2.jpg') }}" alt="team"
+                                        class="img-responsive" data-no-retina>
                                     <div class="team-overlay center-block">
                                         <ul class="social_icon d-flex justify-content-center noborder">
                                             <li><a class="facebook" href="javascript:void(0)"><i
@@ -471,7 +555,7 @@
 
                 <div class="col-lg-6 col-md-12 p-0">
                     <div class="hover-effect">
-                        <img alt="stats" src="{{asset('consulting/img/split-service.jpg')}}" class="about-img">
+                        <img alt="stats" src="{{ asset('consulting/img/split-service.jpg') }}" class="about-img">
                     </div>
                 </div>
 
@@ -501,7 +585,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">CONCEPT CREATION</h6>
-                                    <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project1" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -525,7 +609,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">ARCHITECTURAL</h6>
-                                    <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project2" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -548,7 +632,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">Restaurant Design and Layou</h6>
-                                    <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                 </div>
 
                                 <a href="#js-singlePage-container/project3" class="cbp-caption-activeWrap cbp-singlePage">
@@ -572,7 +656,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> CUISINE & FOOD IDENTITY</h6>
-                                    <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                 </div>
 
                                 <a href="#js-singlePage-container/project4" class="cbp-caption-activeWrap cbp-singlePage">
@@ -596,7 +680,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> HIRING & TRAINING</h6>
-                                    <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project5" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -619,7 +703,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">AUDITS & PROGRAMS</h6>
-                                    <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project6" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -642,7 +726,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> MARKETING & STRATEGY</h6>
-                                    <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project7" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -665,7 +749,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> OPERATIONS & MANAGEMENT</h6>
-                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -688,7 +772,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> ADVISORY & STRATEGY</h6>
-                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -711,7 +795,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> Franchise and Expansion Planning</h6>
-                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -734,7 +818,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> Financial Analysis and Budgeting</h6>
-                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -757,7 +841,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center">Waste Management and Sustainability</h6>
-                                    <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -787,13 +871,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -828,21 +912,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project2"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Strategy Buildup</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project3"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Marketing Analysis</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project4"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Online Consultation</div>
                                             </a>
                                         </li>
@@ -861,13 +945,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -902,21 +986,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project3"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Marketing Analysis</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project4"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Online Consultation</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project5"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Social Media Marketing </div>
                                             </a>
                                         </li>
@@ -935,13 +1019,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -976,21 +1060,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project4"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Online Consultation</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project5"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Social Media Marketing</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project6"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Financial Consultations</div>
                                             </a>
                                         </li>
@@ -1010,13 +1094,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases4.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1051,21 +1135,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project5"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Social Media Marketing</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project6"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Financial Consultations</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project7"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Creative Idea Generator</div>
                                             </a>
                                         </li>
@@ -1085,13 +1169,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases5.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1126,21 +1210,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project6"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Financial Consultations</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project7"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Creative Idea Generator</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project8"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Build Up Career</div>
                                             </a>
                                         </li>
@@ -1160,13 +1244,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases6.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1201,21 +1285,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project7"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Creative Idea Generator</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project8"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Build Up Career</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project1"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Business Planning</div>
                                             </a>
                                         </li>
@@ -1235,13 +1319,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases7.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1276,21 +1360,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project8"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Build Up Career</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project1"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Business Planning</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project2"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Strategy Buildup</div>
                                             </a>
                                         </li>
@@ -1309,13 +1393,13 @@
                             <div class="cbp-slider">
                                 <ul class="cbp-slider-wrap">
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases8.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                     </li>
                                     <li class="cbp-slider-item">
-                                        <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                        <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -1350,21 +1434,21 @@
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project1"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases1.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Business Planning</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project2"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases2.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Strategy Buildup</div>
                                             </a>
                                         </li>
                                         <li class="cbp-l-project-related-item">
                                             <a href="#js-singlePage-container/project3"
                                                 class="cbp-singlePage cbp-l-project-related-link" rel="nofollow">
-                                                <img src="{{asset('consulting/img/cases3.jpg')}}" alt="">
+                                                <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                                 <div class="cbp-l-project-related-title">Marketing Analysis</div>
                                             </a>
                                         </li>
@@ -1380,7 +1464,7 @@
         </div>
 
 
-        <div class="container mt-5" id="sectors" >
+        <div class="container mt-5" id="sectors">
             <h2 class="text-center textColor-white">Sector</h2>
             <div class="row custom-thumbnail">
                 <div class="col-md-6 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
@@ -1448,469 +1532,467 @@
 
 
 
-        <!-- <div class="container">
+    <!-- <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col-12">
+                                        <div class="process-box text-sm-left mb-4 mb-lg-0">
+                                            <span class="pro-step d-inline-block"><i class="fa fa-server"></i></span>
+                                            <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">setup meeting</h5>
+                                            <p class="font-weight-normal">Lorem dapibus, tortor eget turpis auctor, convallis odio ac.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12">
+                                        <div class="process-box text-sm-left mb-4 mb-lg-0">
+                                            <span class="pro-step d-inline-block"><i class="fa fa-layer-group"></i></span>
+                                            <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">consultancy</h5>
+                                            <p class="font-weight-normal">Etiam luctus, lacus maximus elementum dapibus felis.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12">
+                                        <div class="process-box text-sm-left mb-4 mb-sm-0">
+                                            <span class="pro-step d-inline-block"><i class="fa fa-file"></i></span>
+                                            <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">execution</h5>
+                                            <p class="font-weight-normal">Maecenas fringilla molestie elit, maximus dui eleifend quis.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12">
+                                        <div class="process-box text-sm-left mb-0">
+                                            <span class="pro-step d-inline-block"><i class="fa fa-award"></i></span>
+                                            <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">completion</h5>
+                                            <p class="font-weight-normal">Pellentesque habitant morbi tristique senectus et malesuada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+    <!-- <div class="container">
                         <div class="row">
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <div class="process-box text-sm-left mb-4 mb-lg-0">
-                                    <span class="pro-step d-inline-block"><i class="fa fa-server"></i></span>
-                                    <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">setup meeting</h5>
-                                    <p class="font-weight-normal">Lorem dapibus, tortor eget turpis auctor, convallis odio ac.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <div class="process-box text-sm-left mb-4 mb-lg-0">
-                                    <span class="pro-step d-inline-block"><i class="fa fa-layer-group"></i></span>
-                                    <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">consultancy</h5>
-                                    <p class="font-weight-normal">Etiam luctus, lacus maximus elementum dapibus felis.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <div class="process-box text-sm-left mb-4 mb-sm-0">
-                                    <span class="pro-step d-inline-block"><i class="fa fa-file"></i></span>
-                                    <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">execution</h5>
-                                    <p class="font-weight-normal">Maecenas fringilla molestie elit, maximus dui eleifend quis.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 col-12">
-                                <div class="process-box text-sm-left mb-0">
-                                    <span class="pro-step d-inline-block"><i class="fa fa-award"></i></span>
-                                    <h5 class="font-weight-normal color-black mt-25px mb-15px text-capitalize">completion</h5>
-                                    <p class="font-weight-normal">Pellentesque habitant morbi tristique senectus et malesuada.</p>
+                            <div class="col-md-12">
+                                <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                                    <h5> Effective and economical packages </h5>
+                                    <h2> choose <b>best price</b> plan</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales lobortis vehicula. Aliquam sodales turpis a neque sagittis.</p>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 text-center pr-lg-0 md-mb-5 wow fadeInLeft">
+                                <div class="price-item price-transform basic-plan">
+                                    <div class="price-box clearfix">
+                                        <div class="price-package">
+                                            <h3 class="mb-2rem">basic</h3>
+                                        </div>
+                                        <div class="price-icon">
+                                            <i class="fa fa-lightbulb"></i>
+                                        </div>
+                                    </div>
 
+                                    <div class="price">
+                                        <h2 class="position-relative"><span class="dollar">$</span><span class="color-green">75</span><span class="month"> /month</span></h2>
+                                        <p class="price-sub-heading">A budget package for starter</p>
+                                    </div>
+                                    <div class="price-features bg-green">
+                                        <h4 class="mb-0 text-capitalize">basic features</h4>
+                                    </div>
+                                    <div class="price-description">
+                                        <p class="bg-blackDark2">Creative free Web with ads</p>
+                                        <p class="bg-blackDark">Connect Domain</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)" class="btn-setting btn-green btn-hvr-transparent-grey color-black">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 text-center px-lg-0 md-mb-5 wow fadeInUp">
+                                <div class="price-item standard-plan">
+                                    <div class="price-box clearfix">
+                                        <div class="price-icon mb-2rem">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                        <div class="price-package">
+                                            <h3 class="mb-0">standard</h3>
+                                        </div>
+                                    </div>
 
-        <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                            <h5> Effective and economical packages </h5>
-                            <h2> choose <b>best price</b> plan</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales lobortis vehicula. Aliquam sodales turpis a neque sagittis.</p>
+                                    <div class="price">
+                                        <h2 class="position-relative"><span class="dollar">$</span><span class="color-black">99</span><span class="month"> /month</span></h2>
+                                        <p class="price-sub-heading">A super package for starter</p>
+                                    </div>
+                                    <div class="price-features bg-blue">
+                                        <h4 class="mb-0 text-capitalize">standard features</h4>
+                                    </div>
+                                    <div class="price-description">
+                                        <p class="bg-blackDark2">Creative free Web with ads</p>
+                                        <p class="bg-blackDark">Connect Domain</p>
+                                        <p class="bg-blackDark2">Ideal For Small Scale Websites</p>
+                                        <p class="bg-blackDark">Business & Ecommerce</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)" class="btn-setting btn-blue btn-hvr-transparent-grey color-black">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-center pl-lg-0 wow fadeInRight">
+                                <div class="price-item price-transform">
+                                    <div class="price-box clearfix">
+                                        <div class="price-package">
+                                            <h3 class="mb-2rem">advance</h3>
+                                        </div>
+                                        <div class="price-icon">
+                                            <i class="fa fa-briefcase"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="price">
+                                        <h2 class="position-relative"><span class="dollar">$</span><span class="color-green">249</span><span class="month"> /month</span></h2>
+                                        <p class="price-sub-heading">A perfect package for starter</p>
+                                    </div>
+                                    <div class="price-features bg-green">
+                                        <h4 class="mb-0 text-capitalize">advance features</h4>
+                                    </div>
+                                    <div class="price-description">
+                                        <p class="bg-blackDark2">Creative free Web with ads</p>
+                                        <p class="bg-blackDark">Connect Domain</p>
+                                        <p class="bg-blackDark2">Ideal For Small Scale Websites</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)" class="btn-setting btn-green btn-hvr-transparent-grey color-black">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section> -->
+    <!-- Price ends -->
+
+    <!-- Clients start -->
+    <section id="clients" class="bg-blue">
+        <h2 class="d-none">heading</h2>
+        <div class="container">
+
+            <div class="row align-items-center position-relative">
+                <div class="col-lg-7 col-md-8 col-12 mb-5 m-md-0">
+                    <div class="main-title text-center text-md-left mb-4 wow fadeIn" data-wow-delay="300ms">
+                        <h5 class="text-white"> What people are saying</h5>
+                        <h2 class="text-white ml-0"> our happy <b>customers</b></h2>
+                    </div>
+                    <div class="testimonial-for testimonial-one wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="item testimonial-item">
+
+                            <div class="testimonial-text">
+                                <div class="quote d-flex justify-content-start mb-4"><i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="color-white font-16 font-weight-normal mb-4">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Suspendisse tincidunt egestas nunc, at pellentesque
+                                    arcu
+                                    sollicitudin et. Aliquam hendrerit diam quis ipsum ultricies, quis ultricies arcu
+                                    suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <p class="color-white font-16 font-weight-normal mb-2">Fusce ut diam quis nulla
+                                    faucibus
+                                    venenatis. Aliquam mollis arcu et lorem ornare, eu ultrices ante vulputate. </p>
+                                <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
+                                </div>
+
+                                <div class="testimonial-post">
+                                    <div class="text-content">
+                                        <h4 class="color-white text-capitalize mb-1">David P Warrior</h4>
+                                        <p class="color-white font-italic mb-2"> October 25, 2019</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item testimonial-item">
+
+                            <div class="testimonial-text">
+                                <div class="quote d-flex justify-content-start mb-4"><i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="color-white font-16 font-weight-normal mb-4">Totam rem aperiam, eaque ipsa
+                                    quae
+                                    ab illo inventore veri tatis et quasi archi. Totam rem aperiam, eaque ipsa quae
+                                    abillo.
+                                    Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi.</p>
+                                <p class="color-white font-16 font-weight-normal mb-2">Deserunt dolore voluptatem
+                                    assumenda quae possimus sunt dignissimos tempora officia. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing dolore.</p>
+
+                                <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
+                                </div>
+
+                                <div class="testimonial-post">
+                                    <div class="text-content">
+                                        <h4 class="color-white text-capitalize mb-1">Hoxena Williams</h4>
+                                        <p class="color-white font-italic mb-2">September 11, 2019</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item testimonial-item">
+
+                            <div class="testimonial-text">
+                                <div class="quote d-flex justify-content-start mb-4"><i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="color-white font-16 font-weight-normal mb-2">Demons trave runt lectores
+                                    legere
+                                    lius quod ii legunt saepius clary tyitas Investig ationes demon trave rungt.
+                                    Investig
+                                    ationes trave lector ompanies that responsibility in our core business. We work
+                                    systematically to integrate corporate responsibility in our core business.</p>
+                                <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
+                                </div>
+
+                                <div class="testimonial-post">
+                                    <div class="text-content">
+                                        <h4 class="color-white text-capitalize mb-1">Phil Awazio</h4>
+                                        <p class="color-white font-italic mb-2"> February 22, 2019</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item testimonial-item">
+
+                            <div class="testimonial-text">
+                                <div class="quote d-flex justify-content-start mb-4"><i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="color-white font-16 font-weight-normal mb-4">Etiam nec odio vestibulum est
+                                    mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio
+                                    vestibul. Etiam nec odio vestibulum est mattis effic iturut. </p>
+                                <p class="color-white font-16 font-weight-normal mb-2">Deos et accusamus et iusto odio
+                                    dignissimos qui blanditiis praesentium voluptatum dele corrupti quos dolores et quas
+                                    molestias.</p>
+                                <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
+                                </div>
+
+                                <div class="testimonial-post">
+                                    <div class="text-content">
+                                        <h4 class="color-white text-capitalize mb-1">Paul Astin</h4>
+                                        <p class="color-white font-italic mb-2"> November 06, 2018</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item testimonial-item">
+
+                            <div class="testimonial-text">
+                                <div class="quote d-flex justify-content-start mb-4"><i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="color-white font-16 font-weight-normal mb-4">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Suspendisse tincidunt egestas nunc, at pellentesque
+                                    arcu
+                                    sollicitudin et. Aliquam hendrerit diam quis ipsum ultricies, quis ultricies arcu
+                                    suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <p class="color-white font-16 font-weight-normal mb-2">Fusce ut diam quis nulla
+                                    faucibus
+                                    venenatis. Aliquam mollis arcu et lorem ornare, eu ultrices ante vulputate. </p>
+                                <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
+                                </div>
+
+                                <div class="testimonial-post">
+                                    <div class="text-content">
+                                        <h4 class="color-white text-capitalize mb-1">Trixly Wanders</h4>
+                                        <p class="color-white font-italic mb-2"> September 26, 2018</p>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center pr-lg-0 md-mb-5 wow fadeInLeft">
-                        <div class="price-item price-transform basic-plan">
-                            <div class="price-box clearfix">
-                                <div class="price-package">
-                                    <h3 class="mb-2rem">basic</h3>
-                                </div>
-                                <div class="price-icon">
-                                    <i class="fa fa-lightbulb"></i>
-                                </div>
-                            </div>
+                <div class="col-lg-4 offset-lg-1 col-md-4 col-12">
+                    <div class="testimonial-nav testimonial-one mb-0 wow fadeInRight" data-wow-delay="400ms">
+                        <div class="item testimonial-item">
+                            <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
-                            <div class="price">
-                                <h2 class="position-relative"><span class="dollar">$</span><span class="color-green">75</span><span class="month"> /month</span></h2>
-                                <p class="price-sub-heading">A budget package for starter</p>
-                            </div>
-                            <div class="price-features bg-green">
-                                <h4 class="mb-0 text-capitalize">basic features</h4>
-                            </div>
-                            <div class="price-description">
-                                <p class="bg-blackDark2">Creative free Web with ads</p>
-                                <p class="bg-blackDark">Connect Domain</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="javascript:void(0)" class="btn-setting btn-green btn-hvr-transparent-grey color-black">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center px-lg-0 md-mb-5 wow fadeInUp">
-                        <div class="price-item standard-plan">
-                            <div class="price-box clearfix">
-                                <div class="price-icon mb-2rem">
-                                    <i class="fa fa-laptop"></i>
-                                </div>
-                                <div class="price-package">
-                                    <h3 class="mb-0">standard</h3>
-                                </div>
-                            </div>
+                                <div class="testimonial-post">
+                                    <div class="post mb-4 mx-auto"><img
+                                            src="{{ asset('consulting/img/testimonial1.jpg') }}" alt="image"></div>
 
-                            <div class="price">
-                                <h2 class="position-relative"><span class="dollar">$</span><span class="color-black">99</span><span class="month"> /month</span></h2>
-                                <p class="price-sub-heading">A super package for starter</p>
-                            </div>
-                            <div class="price-features bg-blue">
-                                <h4 class="mb-0 text-capitalize">standard features</h4>
-                            </div>
-                            <div class="price-description">
-                                <p class="bg-blackDark2">Creative free Web with ads</p>
-                                <p class="bg-blackDark">Connect Domain</p>
-                                <p class="bg-blackDark2">Ideal For Small Scale Websites</p>
-                                <p class="bg-blackDark">Business & Ecommerce</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="javascript:void(0)" class="btn-setting btn-blue btn-hvr-transparent-grey color-black">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 text-center pl-lg-0 wow fadeInRight">
-                        <div class="price-item price-transform">
-                            <div class="price-box clearfix">
-                                <div class="price-package">
-                                    <h3 class="mb-2rem">advance</h3>
-                                </div>
-                                <div class="price-icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                            </div>
+                                    <div class="text-content text-center">
+                                        <h4 class="color-white text-capitalize mb-1">David P Warrior</h4>
+                                        <p class="color-white mb-2rem"> Owner, Company</p>
+                                        <div class="testimonial-social-icons d-flex justify-content-around">
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-vimeo"></i></a>
 
-                            <div class="price">
-                                <h2 class="position-relative"><span class="dollar">$</span><span class="color-green">249</span><span class="month"> /month</span></h2>
-                                <p class="price-sub-heading">A perfect package for starter</p>
-                            </div>
-                            <div class="price-features bg-green">
-                                <h4 class="mb-0 text-capitalize">advance features</h4>
-                            </div>
-                            <div class="price-description">
-                                <p class="bg-blackDark2">Creative free Web with ads</p>
-                                <p class="bg-blackDark">Connect Domain</p>
-                                <p class="bg-blackDark2">Ideal For Small Scale Websites</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="javascript:void(0)" class="btn-setting btn-green btn-hvr-transparent-grey color-black">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section> -->
-        <!-- Price ends -->
-
-        <!-- Clients start -->
-        <section id="clients" class="bg-blue">
-            <h2 class="d-none">heading</h2>
-            <div class="container">
-
-                <div class="row align-items-center position-relative">
-                    <div class="col-lg-7 col-md-8 col-12 mb-5 m-md-0">
-                        <div class="main-title text-center text-md-left mb-4 wow fadeIn" data-wow-delay="300ms">
-                            <h5 class="text-white"> What people are saying</h5>
-                            <h2 class="text-white ml-0"> our happy <b>customers</b></h2>
-                        </div>
-                        <div class="testimonial-for testimonial-one wow fadeInLeft" data-wow-delay="400ms">
-                            <div class="item testimonial-item">
-
-                                <div class="testimonial-text">
-                                    <div class="quote d-flex justify-content-start mb-4"><i
-                                            class="fa fa-quote-left"></i>
-                                    </div>
-                                    <p class="color-white font-16 font-weight-normal mb-4">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Suspendisse tincidunt egestas nunc, at pellentesque
-                                        arcu
-                                        sollicitudin et. Aliquam hendrerit diam quis ipsum ultricies, quis ultricies arcu
-                                        suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    <p class="color-white font-16 font-weight-normal mb-2">Fusce ut diam quis nulla
-                                        faucibus
-                                        venenatis. Aliquam mollis arcu et lorem ornare, eu ultrices ante vulputate. </p>
-                                    <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
-                                    </div>
-
-                                    <div class="testimonial-post">
-                                        <div class="text-content">
-                                            <h4 class="color-white text-capitalize mb-1">David P Warrior</h4>
-                                            <p class="color-white font-italic mb-2"> October 25, 2019</p>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="item testimonial-item">
-
-                                <div class="testimonial-text">
-                                    <div class="quote d-flex justify-content-start mb-4"><i
-                                            class="fa fa-quote-left"></i>
-                                    </div>
-                                    <p class="color-white font-16 font-weight-normal mb-4">Totam rem aperiam, eaque ipsa
-                                        quae
-                                        ab illo inventore veri tatis et quasi archi. Totam rem aperiam, eaque ipsa quae
-                                        abillo.
-                                        Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi.</p>
-                                    <p class="color-white font-16 font-weight-normal mb-2">Deserunt dolore voluptatem
-                                        assumenda quae possimus sunt dignissimos tempora officia. Lorem ipsum dolor sit amet
-                                        consectetur adipisicing dolore.</p>
-
-                                    <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
-                                    </div>
-
-                                    <div class="testimonial-post">
-                                        <div class="text-content">
-                                            <h4 class="color-white text-capitalize mb-1">Hoxena Williams</h4>
-                                            <p class="color-white font-italic mb-2">September 11, 2019</p>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="item testimonial-item">
-
-                                <div class="testimonial-text">
-                                    <div class="quote d-flex justify-content-start mb-4"><i
-                                            class="fa fa-quote-left"></i>
-                                    </div>
-                                    <p class="color-white font-16 font-weight-normal mb-2">Demons trave runt lectores
-                                        legere
-                                        lius quod ii legunt saepius clary tyitas Investig ationes demon trave rungt.
-                                        Investig
-                                        ationes trave lector ompanies that responsibility in our core business. We work
-                                        systematically to integrate corporate responsibility in our core business.</p>
-                                    <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
-                                    </div>
-
-                                    <div class="testimonial-post">
-                                        <div class="text-content">
-                                            <h4 class="color-white text-capitalize mb-1">Phil Awazio</h4>
-                                            <p class="color-white font-italic mb-2"> February 22, 2019</p>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="item testimonial-item">
-
-                                <div class="testimonial-text">
-                                    <div class="quote d-flex justify-content-start mb-4"><i
-                                            class="fa fa-quote-left"></i>
-                                    </div>
-                                    <p class="color-white font-16 font-weight-normal mb-4">Etiam nec odio vestibulum est
-                                        mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio
-                                        vestibul. Etiam nec odio vestibulum est mattis effic iturut. </p>
-                                    <p class="color-white font-16 font-weight-normal mb-2">Deos et accusamus et iusto odio
-                                        dignissimos qui blanditiis praesentium voluptatum dele corrupti quos dolores et quas
-                                        molestias.</p>
-                                    <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
-                                    </div>
-
-                                    <div class="testimonial-post">
-                                        <div class="text-content">
-                                            <h4 class="color-white text-capitalize mb-1">Paul Astin</h4>
-                                            <p class="color-white font-italic mb-2"> November 06, 2018</p>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="item testimonial-item">
-
-                                <div class="testimonial-text">
-                                    <div class="quote d-flex justify-content-start mb-4"><i
-                                            class="fa fa-quote-left"></i>
-                                    </div>
-                                    <p class="color-white font-16 font-weight-normal mb-4">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Suspendisse tincidunt egestas nunc, at pellentesque
-                                        arcu
-                                        sollicitudin et. Aliquam hendrerit diam quis ipsum ultricies, quis ultricies arcu
-                                        suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    <p class="color-white font-16 font-weight-normal mb-2">Fusce ut diam quis nulla
-                                        faucibus
-                                        venenatis. Aliquam mollis arcu et lorem ornare, eu ultrices ante vulputate. </p>
-                                    <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i>
-                                    </div>
-
-                                    <div class="testimonial-post">
-                                        <div class="text-content">
-                                            <h4 class="color-white text-capitalize mb-1">Trixly Wanders</h4>
-                                            <p class="color-white font-italic mb-2"> September 26, 2018</p>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 offset-lg-1 col-md-4 col-12">
-                        <div class="testimonial-nav testimonial-one mb-0 wow fadeInRight" data-wow-delay="400ms">
-                            <div class="item testimonial-item">
-                                <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
+                        <div class="item testimonial-item">
+                            <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
-                                    <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial1.jpg')}}"
-                                                alt="image"></div>
+                                <div class="testimonial-post">
+                                    <div class="post mb-4 mx-auto"><img
+                                            src="{{ asset('consulting/img/testimonial2.jpg') }}" alt="image"></div>
 
-                                        <div class="text-content text-center">
-                                            <h4 class="color-white text-capitalize mb-1">David P Warrior</h4>
-                                            <p class="color-white mb-2rem"> Owner, Company</p>
-                                            <div class="testimonial-social-icons d-flex justify-content-around">
-                                                <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-vimeo"></i></a>
+                                    <div class="text-content text-center">
+                                        <h4 class="color-white text-capitalize mb-1">Hoxena Williams</h4>
+                                        <p class="color-white mb-2rem"> Customer Relations, Tricon</p>
+                                        <div class="testimonial-social-icons d-flex justify-content-around">
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-vimeo"></i></a>
 
-                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
-                            <div class="item testimonial-item">
-                                <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
+                        </div>
+                        <div class="item testimonial-item">
+                            <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
-                                    <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial2.jpg')}}"
-                                                alt="image"></div>
+                                <div class="testimonial-post">
+                                    <div class="post mb-4 mx-auto"><img
+                                            src="{{ asset('consulting/img/testimonial3.jpg') }}" alt="image"></div>
 
-                                        <div class="text-content text-center">
-                                            <h4 class="color-white text-capitalize mb-1">Hoxena Williams</h4>
-                                            <p class="color-white mb-2rem"> Customer Relations, Tricon</p>
-                                            <div class="testimonial-social-icons d-flex justify-content-around">
-                                                <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-vimeo"></i></a>
-
-                                            </div>
+                                    <div class="text-content text-center">
+                                        <h4 class="color-white text-capitalize mb-1">Phil Awazio</h4>
+                                        <p class="color-white mb-2rem"> HR, P.Force</p>
+                                        <div class="testimonial-social-icons d-flex justify-content-around">
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
-                            <div class="item testimonial-item">
-                                <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
+                        </div>
+                        <div class="item testimonial-item">
+                            <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
-                                    <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial3.jpg')}}"
-                                                alt="image"></div>
+                                <div class="testimonial-post">
+                                    <div class="post mb-4 mx-auto"><img
+                                            src="{{ asset('consulting/img/testimonial4.jpg') }}" alt="image"></div>
 
-                                        <div class="text-content text-center">
-                                            <h4 class="color-white text-capitalize mb-1">Phil Awazio</h4>
-                                            <p class="color-white mb-2rem"> HR, P.Force</p>
-                                            <div class="testimonial-social-icons d-flex justify-content-around">
-                                                <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
-                                            </div>
+                                    <div class="text-content text-center">
+                                        <h4 class="color-white text-capitalize mb-1">Paul Astin</h4>
+                                        <p class="color-white mb-2rem"> Actor, Entertainment</p>
+                                        <div class="testimonial-social-icons d-flex justify-content-around">
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-vimeo"></i></a>
+
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
-                            <div class="item testimonial-item">
-                                <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
+                        </div>
+                        <div class="item testimonial-item">
+                            <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
-                                    <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial4.jpg')}}"
-                                                alt="image"></div>
+                                <div class="testimonial-post">
+                                    <div class="post mb-4 mx-auto"><img
+                                            src="{{ asset('consulting/img/testimonial5.jpg') }}" alt="image"></div>
 
-                                        <div class="text-content text-center">
-                                            <h4 class="color-white text-capitalize mb-1">Paul Astin</h4>
-                                            <p class="color-white mb-2rem"> Actor, Entertainment</p>
-                                            <div class="testimonial-social-icons d-flex justify-content-around">
-                                                <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-vimeo"></i></a>
-
-                                            </div>
+                                    <div class="text-content text-center">
+                                        <h4 class="color-white text-capitalize mb-1">Trixly Wanders</h4>
+                                        <p class="color-white mb-2rem"> Athlete, Sports </p>
+                                        <div class="testimonial-social-icons d-flex justify-content-around">
+                                            <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
+                                            <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="item testimonial-item">
-                                <div class="testimonial-person pt-5 d-flex justify-content-center mx-auto">
 
-                                    <div class="testimonial-post">
-                                        <div class="post mb-4 mx-auto"><img src="{{asset('consulting/img/testimonial5.jpg')}}"
-                                                alt="image"></div>
-
-                                        <div class="text-content text-center">
-                                            <h4 class="color-white text-capitalize mb-1">Trixly Wanders</h4>
-                                            <p class="color-white mb-2rem"> Athlete, Sports </p>
-                                            <div class="testimonial-social-icons d-flex justify-content-around">
-                                                <a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-twitter-square"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
-                                                <a href="javascript:void(0)"><i class="fab fa-pinterest-square"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Clients ends -->
+        </div>
+    </section>
+    <!-- Clients ends -->
 
-        <!-- Request start -->
-        <section id="request" class="bg-blackDark half-section p-0">
-            <h2 class="d-none">heading</h2>
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 p-0">
-                        <div class="owl-carousel owl-theme owl-split">
-                            <div class="item">
-                                <div class="image split-blog-scale">
-                                    <img alt="request" src="{{asset('consulting/img/split-request.jpg')}}" class="about-img">
-                                </div>
+    <!-- Request start -->
+    <section id="request" class="bg-blackDark half-section p-0">
+        <h2 class="d-none">heading</h2>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 p-0">
+                    <div class="owl-carousel owl-theme owl-split">
+                        <div class="item">
+                            <div class="image split-blog-scale">
+                                <img alt="request" src="{{ asset('consulting/img/split-request.jpg') }}"
+                                    class="about-img">
                             </div>
-                            <div class="item">
-                                <div class="image split-blog-scale">
-                                    <img alt="request" src="{{asset('consulting/img/split-request2.jpg')}}" class="about-img">
-                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="image split-blog-scale">
+                                <img alt="request" src="{{ asset('consulting/img/split-request2.jpg') }}"
+                                    class="about-img">
                             </div>
-                            <div class="item">
-                                <div class="image split-blog-scale">
-                                    <img alt="request" src="{{asset('consulting/img/split-request3.jpg')}}" class="about-img">
-                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="image split-blog-scale">
+                                <img alt="request" src="{{ asset('consulting/img/split-request3.jpg') }}"
+                                    class="about-img">
                             </div>
                         </div>
                     </div>
-                    @livewire('contact-us')
                 </div>
+                @livewire('contact-us')
             </div>
-        </section>
-        <!--Request ends-->
+        </div>
+    </section>
+    <!--Request ends-->
 
-        <!-- Request Boxes start -->
-        {{-- <section class="bg-blackDark"> --}}
+    <!-- Request Boxes start -->
+    {{-- <section class="bg-blackDark"> --}}
 
-        {{-- <div class="container">
+    {{-- <div class="container">
             <h2 class="text-center textColor-white">Sector</h2>
             <div class="row custom-thumbnail">
                 <div class="col-md-4 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
@@ -1990,7 +2072,7 @@
             </div>
         </div> --}}
 
-        {{--
+    {{--
         <!-- <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 col-12">
@@ -2023,107 +2105,106 @@
                     </div>
                 </div>
             </div> --> --}}
-        {{-- </section> --}}
-        <!-- Request Boxes end -->
+    {{-- </section> --}}
+    <!-- Request Boxes end -->
 
-        <!-- Blog start -->
+    <!-- Blog start -->
 
-        <!-- Blog ends -->
+    <!-- Blog ends -->
 
-        <!-- Brands starts -->
-        <section class="bg-green brand-transform-padding">
-            <div class="section-padding">
-                <h2 class="d-none">heading</h2>
-                <div class="container">
-                    <div class="brand-carousel owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="consulting/img/client-one.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-two.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-three.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-four.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-five.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-one.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-two.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-three.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-four.png" alt="Logo">
-                        </div>
-                        <div class="item">
-                            <img src="consulting/img/client-five.png" alt="Logo">
-                        </div>
+    <!-- Brands starts -->
+    <section class="bg-green brand-transform-padding">
+        <div class="section-padding">
+            <h2 class="d-none">heading</h2>
+            <div class="container">
+                <div class="brand-carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="consulting/img/client-one.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-two.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-three.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-four.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-five.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-one.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-two.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-three.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-four.png" alt="Logo">
+                    </div>
+                    <div class="item">
+                        <img src="consulting/img/client-five.png" alt="Logo">
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Brands ends -->
+        </div>
+    </section>
+    <!-- Brands ends -->
 
-        <!-- Contact & Map starts -->
-        <section id="contact" class="p-0 contact-transform position-absolute w-100">
-            <div class="container contact-shadow">
-                <div class="row mx-lg-0">
-                    <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                        <div class="contact-box box-shadow-contact">
-                            <div class="main-title text-center text-md-left mb-4">
-                                <h2 class="font-weight-normal">Contact Us </h2>
-                            </div>
+    <!-- Contact & Map starts -->
+    <section id="contact" class="p-0 contact-transform position-absolute w-100">
+        <div class="container contact-shadow">
+            <div class="row mx-lg-0">
+                <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                    <div class="contact-box box-shadow-contact">
+                        <div class="main-title text-center text-md-left mb-4">
+                            <h2 class="font-weight-normal">Contact Us </h2>
+                        </div>
 
-                            <div class="text-center text-md-left">
+                        <div class="text-center text-md-left">
 
-                                <!--Address-->
-                                <p class="mb-3">123 Street New York City , United States Of America. </p>
+                            <!--Address-->
+                            <p class="mb-3">123 Street New York City , United States Of America. </p>
 
-                                <!--Phone-->
-                                <p class="mb-3"> Office Telephone : 001 01085379709 <br>
-                                    Mobile : 001 63165370895 </p>
+                            <!--Phone-->
+                            <p class="mb-3"> Office Telephone : 001 01085379709 <br>
+                                Mobile : 001 63165370895 </p>
 
-                                <!--Email-->
-                                <p class="mb-3"> Email: <a href="mailto:email@website.com"
-                                        class="color-black">admin@website.com</a> <br>
-                                    Inquiries: <a href="mailto:email@website.com"
-                                        class="color-black">email@website.com</a>
-                                </p>
+                            <!--Email-->
+                            <p class="mb-3"> Email: <a href="mailto:email@website.com"
+                                    class="color-black">admin@website.com</a> <br>
+                                Inquiries: <a href="mailto:email@website.com" class="color-black">email@website.com</a>
+                            </p>
 
-                                <!--Timing-->
-                                <p class="mb-3">Mon-Sat: 9am to 6pm</p>
+                            <!--Timing-->
+                            <p class="mb-3">Mon-Sat: 9am to 6pm</p>
 
-                                <!--Social Icon-->
-                                <div class="address-social black">
-                                    <ul class="list-unstyled">
-                                        <li><a class="facebook-bg-hvr ml-0" href="javascript:void(0);"><i
-                                                    class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                        <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i
-                                                    class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a class="google-bg-hvr" href="javascript:void(0);"><i
-                                                    class="fab fa-google" aria-hidden="true"></i></a></li>
-                                        <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i
-                                                    class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                                        <li><a class="instagram-bg-hvr mr-0" href="javascript:void(0);"><i
-                                                    class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
+                            <!--Social Icon-->
+                            <div class="address-social black">
+                                <ul class="list-unstyled">
+                                    <li><a class="facebook-bg-hvr ml-0" href="javascript:void(0);"><i
+                                                class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a class="google-bg-hvr" href="javascript:void(0);"><i class="fab fa-google"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i
+                                                class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                    <li><a class="instagram-bg-hvr mr-0" href="javascript:void(0);"><i
+                                                class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 p-0 col-map box-shadow-map">
-                        <div id="google-map" class="bg-blackDark map"></div>
-                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 p-0 col-map box-shadow-map">
+                    <div id="google-map" class="bg-blackDark map"></div>
                 </div>
             </div>
-        </section>
-        <!-- Contact & Map ends -->
-    @endsection
+        </div>
+    </section>
+    <!-- Contact & Map ends -->
+@endsection
