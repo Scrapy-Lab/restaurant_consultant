@@ -584,7 +584,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center">CONCEPT CREATION</h6>
+                                    <h6 class="service_title text-center">Concept Creation</h6>
                                     <img src="{{ asset('consulting/img/cases1.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project1" class="cbp-caption-activeWrap cbp-singlePage">
@@ -608,7 +608,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center">ARCHITECTURAL</h6>
+                                    <h6 class="service_title text-center">Restaurant Design & Layout</h6>
                                     <img src="{{ asset('consulting/img/cases2.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project2" class="cbp-caption-activeWrap cbp-singlePage">
@@ -631,7 +631,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center">Restaurant Design and Layou</h6>
+                                    <h6 class="service_title text-center"> Marketing & Strategy</h6>
                                     <img src="{{ asset('consulting/img/cases3.jpg') }}" alt="">
                                 </div>
 
@@ -655,7 +655,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center"> CUISINE & FOOD IDENTITY</h6>
+                                    <h6 class="service_title text-center"> Hiring & Training</h6>
                                     <img src="{{ asset('consulting/img/cases4.jpg') }}" alt="">
                                 </div>
 
@@ -679,7 +679,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center"> HIRING & TRAINING</h6>
+                                    <h6 class="service_title text-center"> Kitchen Consultancy & Food Planing</h6>
                                     <img src="{{ asset('consulting/img/cases5.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project5" class="cbp-caption-activeWrap cbp-singlePage">
@@ -702,7 +702,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center">AUDITS & PROGRAMS</h6>
+                                    <h6 class="service_title text-center"> Bar Consultancy & Beverage Planing</h6>
                                     <img src="{{ asset('consulting/img/cases6.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project6" class="cbp-caption-activeWrap cbp-singlePage">
@@ -725,7 +725,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center"> MARKETING & STRATEGY</h6>
+                                    <h6 class="service_title text-center"> Complete Launch Plan</h6>
                                     <img src="{{ asset('consulting/img/cases7.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project7" class="cbp-caption-activeWrap cbp-singlePage">
@@ -748,7 +748,7 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center"> OPERATIONS & MANAGEMENT</h6>
+                                    <h6 class="service_title text-center"> Operations & Management</h6>
                                     <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
@@ -771,8 +771,31 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center"> ADVISORY & STRATEGY</h6>
-                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
+                                    <h6 class="service_title text-center"> F & B Audit</h6>
+                                    <img src="{{ asset('consulting/img/cases9.jpg') }}" alt="">
+                                </div>
+                                <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
+                                    <div class="cbp-l-caption-alignCenter">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="cases-image-inner">
+                                                <span class="cases-line top"></span>
+                                                <span class="cases-line top-right"></span>
+                                                <span class="cases-line bottom"></span>
+                                                <span class="cases-line bottom-left"></span>
+                                                <h6
+                                                    class="text-white text-uppercase font-14 font-secondary font-weight-light">
+                                                    build up career</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cbp-item">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h6 class="service_title text-center">Financial Audit</h6>
+                                    <img src="{{ asset('consulting/img/cases10.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -795,7 +818,7 @@
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <h6 class="service_title text-center"> Franchise and Expansion Planning</h6>
-                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
+                                    <img src="{{ asset('consulting/img/cases11.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -817,8 +840,8 @@
                         <div class="cbp-item">
                             <div class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center"> Financial Analysis and Budgeting</h6>
-                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
+                                    <h6 class="service_title text-center"> Brand Building</h6>
+                                    <img src="{{ asset('consulting/img/cases12.jpg') }}" alt="">
                                 </div>
                                 <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
                                     <div class="cbp-l-caption-alignCenter">
@@ -837,29 +860,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cbp-item">
-                            <div class="cbp-caption">
-                                <div class="cbp-caption-defaultWrap">
-                                    <h6 class="service_title text-center">Waste Management and Sustainability</h6>
-                                    <img src="{{ asset('consulting/img/cases8.jpg') }}" alt="">
-                                </div>
-                                <a href="#js-singlePage-container/project8" class="cbp-caption-activeWrap cbp-singlePage">
-                                    <div class="cbp-l-caption-alignCenter">
-                                        <div class="cbp-l-caption-body">
-                                            <div class="cases-image-inner">
-                                                <span class="cases-line top"></span>
-                                                <span class="cases-line top-right"></span>
-                                                <span class="cases-line bottom"></span>
-                                                <span class="cases-line bottom-left"></span>
-                                                <h6
-                                                    class="text-white text-uppercase font-14 font-secondary font-weight-light">
-                                                    build up career</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div id="js-singlePage-container" class="d-none">
@@ -1471,18 +1472,6 @@
                     <!-- serices box start -->
                     <div class="services-box">
                         <div class="services-detail">
-                            <p class="service-head mt-4 textColor-white">Cloud Kitchens &amp; Delivery</p>
-                            <img class="sector_class_cloud" alt=""
-                                src="https://assets.limetray.com/assets/image_manager/uploads/3479/Quick%20Service.png">
-                        </div>
-                    </div>
-                    <!-- serices box end -->
-                </div>
-
-                <div class="col-md-6 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
-                    <!-- serices box start -->
-                    <div class="services-box">
-                        <div class="services-detail">
                             <p class="service-head mt-4 textColor-white"> Casual &amp; Fine dining Restaurants </p>
                             <img class="sector_class_fineDine" alt=""
                                 src="https://assets.limetray.com/assets/image_manager/uploads/3479/Casual%20&amp;%20Fine%20Dining.png">
@@ -1491,17 +1480,6 @@
                     <!-- serices box end -->
                 </div>
 
-                <div class="col-md-6 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
-                    <!-- serices box start -->
-                    <div class="services-box">
-                        <div class="services-detail">
-                            <p class="service-head mt-4 textColor-white">Quick Service Restaurants</p>
-                            <img class="sector_class_quick" alt=""
-                                src="https://assets.limetray.com/assets/image_manager/uploads/3479/FMCG.png">
-                        </div>
-                    </div>
-                    <!-- serices box end -->
-                </div>
                 <div class="col-md-6 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
                     <!-- serices box start -->
                     <div class="services-box">
@@ -1515,6 +1493,32 @@
                     </div>
                     <!-- serices box end -->
                 </div>
+                <div class="col-md-6 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
+                    <!-- serices box start -->
+                    <div class="services-box">
+                        <div class="services-detail">
+                            <p class="service-head mt-4 textColor-white">Cloud Kitchens &amp; Delivery</p>
+                            <img class="sector_class_cloud" alt=""
+                                src="https://assets.limetray.com/assets/image_manager/uploads/3479/Quick%20Service.png">
+                        </div>
+                    </div>
+                    <!-- serices box end -->
+                </div>
+
+
+
+                <div class="col-md-6 small-12 medium-4 large-4 columns services-detail-brdr our-thumb">
+                    <!-- serices box start -->
+                    <div class="services-box">
+                        <div class="services-detail">
+                            <p class="service-head mt-4 textColor-white">Quick Service Restaurants</p>
+                            <img class="sector_class_quick" alt=""
+                                src="https://assets.limetray.com/assets/image_manager/uploads/3479/FMCG.png">
+                        </div>
+                    </div>
+                    <!-- serices box end -->
+                </div>
+
             </div>
             <!--Second row starts from here-->
 
@@ -1966,18 +1970,6 @@
                         <div class="item">
                             <div class="image split-blog-scale">
                                 <img alt="request" src="{{ asset('consulting/img/split-request.jpg') }}"
-                                    class="about-img">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image split-blog-scale">
-                                <img alt="request" src="{{ asset('consulting/img/split-request2.jpg') }}"
-                                    class="about-img">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image split-blog-scale">
-                                <img alt="request" src="{{ asset('consulting/img/split-request3.jpg') }}"
                                     class="about-img">
                             </div>
                         </div>
