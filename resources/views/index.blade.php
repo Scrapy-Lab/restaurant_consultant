@@ -19,24 +19,27 @@
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="{{ asset('consulting/img/banner1.jpg') }}" class="d-block w-100"
                         alt="{{ asset('consulting/img/banner.jpg') }}">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Elevating restaurants from vision to success through strategic consulting.</h1>
+                    <div class="carousel-caption  d-md-block">
+                        <h1 class="desktop_text">Elevating restaurants from vision to success through strategic consulting.</h1>
+                        <h6 class="mobile_text">Elevating restaurants from vision to success through strategic consulting.</h6>
                         <p class="textColor-white">Get Business Solution with TRC Teams.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <img src="{{ asset('consulting/img/banner2.jpg') }}" class="d-block w-100"
                         alt="{{ asset('consulting/img/banner.jpg') }}">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Turning the tables on restaurant success with professional consulting.</h1>
+                    <div class="carousel-caption  d-md-block">
+                        <h1 class="desktop_text">Turning the tables on restaurant success with professional consulting.</h1>
+                        <h6 class="mobile_text">Turning the tables on restaurant success with professional consulting.</h6>
                         <p class="textColor-white">Get Business Solution with TRC Teams.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{ asset('consulting/img/banner3.jpg') }}" class="d-block w-100"
                         alt="{{ asset('consulting/img/banner.jpg') }}">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>We Provide Most Beneficial Services</h1>
+                    <div class="carousel-caption  d-md-block">
+                        <h1 class="desktop_text">We Provide Most Beneficial Services</h1>
+                        <h6 class="mobile_text">We Provide Most Beneficial Services</h6>
                         <p class="textColor-white">Get Business Solution with TRC Teams.</p>
                     </div>
                 </div>
