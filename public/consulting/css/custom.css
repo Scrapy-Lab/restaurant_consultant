@@ -112,3 +112,16 @@ img.sector_class_clubs {
 
 
   }
+
+
+  .modal-content{
+
+    background-color: #000;
+    border-color: rgb(130, 90, 187) !important;
+}
+
+
+.modal-header{
+
+    border-color: rgb(130, 90, 187) !important;
+}
