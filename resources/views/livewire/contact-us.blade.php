@@ -14,9 +14,11 @@
                         <div class="request-form-textfield pb-4">
                             <select class="form-control" wire:model.lazy="service_id" title="service_id" name="service_id" id="service_ids" required>
                                 <option selected value="0">Select Service</option>
-                                <option value="1">Service 1</option>
-                                <option value="2">Service 2</option>
-                                <option value="3">Service 3</option>
+                                <option value="Hiring & Training">Restaurant Hiring & Training</option>
+                                <option value="Kitchen Consultancy & Food Planing">Restaurant Kitchen Consultancy & Food Planing</option>
+                                <option value="Bar Consultancy & Beverage Planing">Restaurant Bar Consultancy & Beverage Planing</option>
+                                <option value="Complete Launch Plan">Restaurant Complete Launch Plan</option>
+                                <option value="Operations & Management">Restaurant Operations & Management</option>
                             </select>
                             @if ($errors->has('service_id'))
                                 <span style="color: red">{{ $errors->first('service_id') }}</span>

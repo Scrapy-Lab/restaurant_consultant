@@ -168,6 +168,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Silber\PageCache\LaravelServiceProvider::class,
+        Davmixcool\MetaManager\MetaServiceProvider::class,
     ])->toArray(),
 
     /*

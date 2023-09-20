@@ -1,10 +1,10 @@
+$("#loader-fade").delay(500).fadeOut(800);
 jQuery(window).on("load", function () {
     "use strict";
 
     /*  ===================================
      Loading Timeout
      ====================================== */
-    $("#loader-fade").fadeOut(800);
 });
 
 jQuery(function ($) {
@@ -284,7 +284,7 @@ jQuery(function ($) {
     $(document).ready(function(){
 
         // Initialize select2
-        $("#services").select2();
+        // $("#services").select2();
 
     });
 
