@@ -2354,7 +2354,7 @@
 
                             <!--Phone-->
                             <p class="mb-3"> Office Mobile : <a href="tel:+919110150863">+91 911-015-0863 </a> <br>
-                                Altenate Mobile :<a href="tel:+917979068408"> +91 797-906-8408</a> </p>
+                                Alternate Mobile :<a href="tel:+917979068408"> +91 797-906-8408</a> </p>
 
                             <!--Email-->
                             <p class="mb-3"> Email: <a href="mailto:email@website.com"
