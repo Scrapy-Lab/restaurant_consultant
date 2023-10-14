@@ -27,7 +27,8 @@
             'We are passionate about the art and science of hospitality. Our mission is to partner with restaurants, cafes, bars, and culinary establishments to elevate their dining experiences, streamline operations, and maximize their potential for success.',
         'image' => asset('consulting/img/logo.png'),
         'keywords' =>
-            'consultant, restaurant , restaurants, restaurants nearby ,food near me, food open near me, restaurants open near me, audit, financial , cafes , bar, cafe, bars, culinary, concept creation, design, layouts, marketing, strategy, hiring, training, kithen, food planing, beverage, complete launch plan, management, operations, financial audit, franchise, expansion, brand, building, fine dining, causal dining, clubs, club, cloud kitchens, quick service',
+
+          'trc, the restaurant consultant, restaurant consultant, consultant, restaurant , restaurants, restaurants nearby ,food near me, food open near me, restaurants open near me, audit, financial , cafes , bar, cafe, bars, culinary, concept creation, design, layouts, marketing, strategy, hiring, training, kithen, food planing, beverage, complete launch plan, management, operations, financial audit, franchise, expansion, brand, building, fine dining, causal dining, clubs, club, cloud kitchens, quick service',
     ])
 
     <!-- Meta Tags -->

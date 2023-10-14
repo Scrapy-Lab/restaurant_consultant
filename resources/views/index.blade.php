@@ -2353,7 +2353,7 @@
                             <p class="mb-3">Chhatarpur, Delhi, India. </p>
 
                             <!--Phone-->
-                            <p class="mb-3"> Office Mobile : <a href="tel:+919110150863">+91 911-015-0863 </a> <br>
+                            <p class="mb-3"> Office Mobile : <a href="tel:+918603526364">+91 860-352-6364 </a> <br>
                                 Alternate Mobile :<a href="tel:+917979068408"> +91 797-906-8408</a> </p>
 
                             <!--Email-->
@@ -2366,20 +2366,20 @@
                             </p>
 
                             <!--Timing-->
-                            <p class="mb-3">Mon-Sat: 9am to 6pm</p>
+                            <p class="mb-3">Mon-Sat: 10AM to 7PM</p>
 
                             <!--Social Icon-->
                             <div class="address-social black">
                                 <ul class="list-unstyled">
-                                    <li><a class="facebook-bg-hvr ml-0" title= "Facebook" href="javascript:void(0);"><i
-                                                class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    {{-- <li><a class="facebook-bg-hvr ml-0" title= "Facebook" href="javascript:void(0);"><i
+                                                class="fab fa-facebook-f" aria-hidden="true"></i></a></li> --}}
                                     {{-- <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter"
                                                 aria-hidden="true"></i></a></li> --}}
-                                    <li><a class="google-bg-hvr" title= "Google" href="javascript:void(0);"><i class="fab fa-google"
-                                                aria-hidden="true"></i></a></li>
+                                    {{-- <li><a class="google-bg-hvr" title= "Google" href="javascript:void(0);"><i class="fab fa-google"
+                                                aria-hidden="true"></i></a></li> --}}
                                     {{-- <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i
                                                 class="fab fa-linkedin-in" aria-hidden="true"></i></a></li> --}}
-                                    <li><a class="instagram-bg-hvr mr-0" title= "Instagram" href="javascript:void(0);"><i
+                                    <li><a class="instagram-bg-hvr mr-0" target="_blank" title= "Instagram" href="https://instagram.com/trc.in?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
                                                 class="fab fa-instagram" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>

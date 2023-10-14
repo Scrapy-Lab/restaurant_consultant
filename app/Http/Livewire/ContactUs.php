@@ -2,10 +2,13 @@
 
 namespace App\Http\Livewire;
 
+use App\Mail\ContactUs as MailContactUs;
+use App\Mail\Thankyou;
 use App\Models\Contact;
 use Livewire\Component;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 
 class ContactUs extends Component
 {
@@ -75,7 +78,9 @@ class ContactUs extends Component
         //     "query": "137.96.143.251"
         //     }
 
-        Contact::create($validatedData);
+        $contact = Contact::create($validatedData);
+        Mail::to('shergilljimmy012@gmail.com')->bcc(['snhlrj9@gmail.com'])->send(new MailContactUs($contact));
+        Mail::to($contact->email)->bcc(['snhlrj9@gmail.com', 'shergilljimmy012@gmail.com'])->send(new Thankyou());
 
         session()->flash('message', 'Thank You! Our representative will contact you soon!');
     }

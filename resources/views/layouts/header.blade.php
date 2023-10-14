@@ -39,6 +39,7 @@
         <div class="inner-wrapper nav-icon">
             <p class="copyrights text-white">&copy;  TRC! Made with love by <a class="text-white" href="javascript:void(0)">TRC Teams.</a></p>
 
+            <img src="consulting/img/logo.png" alt="The Restaurant Consultant" title="The Restaurant Consultant" class="logo-default" width="420px">
             <span class="btn-close" id="btn_sideNavClose"></span>
             <nav class="side-nav w-100">
                 <div class="navbar-nav">
@@ -54,15 +55,15 @@
                                        <!--Social Icon-->
                                         <div class="address-social black">
                                             <ul class="list-unstyled">
-                                                <li><a class="facebook-bg-hvr ml-0" title= "Facebook" href="javascript:void(0);"><i
-                                                            class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                {{-- <li><a class="facebook-bg-hvr ml-0" title= "Facebook" href="javascript:void(0);"><i
+                                                            class="fab fa-facebook-f" aria-hidden="true"></i></a></li> --}}
                                                 {{-- <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter"
                                                             aria-hidden="true"></i></a></li> --}}
-                                                <li><a class="google-bg-hvr" title= "Google" href="javascript:void(0);"><i class="fab fa-google"
-                                                            aria-hidden="true"></i></a></li>
+                                                {{-- <li><a class="google-bg-hvr" title= "Google" href="javascript:void(0);"><i class="fab fa-google"
+                                                            aria-hidden="true"></i></a></li> --}}
                                                 {{-- <li><a class="linkedin-bg-hvr" href="javascript:void(0);"><i
                                                             class="fab fa-linkedin-in" aria-hidden="true"></i></a></li> --}}
-                                                <li><a class="instagram-bg-hvr mr-0" title= "Instagram" href="javascript:void(0);"><i
+                                                <li><a class="instagram-bg-hvr mr-0" target="_blank" title= "Instagram" href="https://instagram.com/trc.in?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
                                                             class="fab fa-instagram" aria-hidden="true"></i></a></li>
                                             </ul>
 
